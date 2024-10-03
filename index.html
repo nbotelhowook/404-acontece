@@ -1,145 +1,33 @@
-
-</html>
-
-
 <!DOCTYPE html>
+<html>
+   <body>
+       <video autoplay loop width="100%">
 
-<html class="no-js" lang="pt-PT">
+    <source src="feelgood.mp4"
+            type="video/mp4">
 
-
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
-		<meta name="HandheldFriendly" content="True">
-		<meta name="format-detection" content="telephone=no">
-
-		<title>Wook - Livros, livros escolares, livros universitários, jogos, dvd's e ebooks</title>
-		<meta name="description" content="A WOOK é a maior livraria portuguesa online. Vende para todo o mundo livros e eBooks portugueses, ingleses, espanhóis e franceses, livros escolares, livros universitários, auxiliares de ensino, material didático, software, vídeo jogos e filmes.">
-		<meta http-equiv="Content-Language" content="pt-PT" >
-		<link rel="stylesheet" type="text/css" href="css/typography.css" />
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	
-		<link rel="stylesheet" type="text/css" href="/build/137/typography.min.css" />
-<link rel="stylesheet" type="text/css" href="/build/137/error-page.min.css" />
-
-		<style>
-			html,body{
-				width: 100%;
-    			height: 100%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-
-			.wook, .wook video{
-				background-color: #3f011d;
-			}
-
-			.bilheteira, .bilheteira video{
-				background-color: #05052A;
-			}
-
-			section{
-				max-width: 750px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;	
-			}
-
-            .header{
-                display: flex;
-                align-items: center;
-                gap: 15px;
-            }
-            
-            .logo{
-                width: 155px;
-            }
-
-            h1{
-				font-family: "BryantProRegular", sans-serif;
-				font-size: 23px;
-				color: #FFFFFF;
-            }
-
-			@media (min-width: 504px) {
-				.logo{
-					width: 163px;
-				}
-
-				h1{
-					font-size: 27px;
-				}
-			}
-
-			video{
-				width: 100%;
-				height: 100%;
-			}
-
-			.err-info{
-				font-family: "BryantProRegular", sans-serif;
-				font-size: 20px;
-				color: white;
-				padding: 20px 0px;
-			}
-
-			.wook .err-info{
-                color: #FFFECF;
-            }
-
-            .bilheteira .err-info{
-                color: #A1C8F9;
-            }
-
-			button{
-				font-family: "BryantProRegular", sans-serif;
-				font-size: 14px;
-				text-align: center;
-				width: 184px;
-				height: 28px;
-				border: none;
-				border-radius: 5px;
-				cursor: pointer;
-			}
-
-			.wook button{
-				background: #637453;
-				color: #FDFACC;
-			}
-
-			.bilheteira button{
-				background: #1C1562;
-				color: #A2C7F9;
-			}
-
-		</style>
-	</head>
-
-	
-	<body class='wook'>
-		<section id="error-content">
-			<div class="header">
-                <img src="https://pre-www.wook.pt/assets/errorPages/wook-logo-white.png" class="logo">
-                            </div>
-							<video autoplay="" loop="" muted="" webkit-playsinline="">
-								<source src="video-mov-hevc-safari.mp4" type='video/mp4;codecs=hvc1'>
-								<source src="video-mov-vp9-chrome.webm" type="video/webm">
-							
-							
-							</video>
-			<div class="err-info" > Oops! Página não encontrada </div>
-			<a href="/" target="_self">
-				<button class="btn-home" id="btn-home">
-					VOLTAR AO INÍCIO
-				</button>
-			</a>
-		</section>
-		
-	</body>
-
+    Sorry, your browser doesn't support embedded videos.
+</video>
+      <script>
+         // Change the variables below to your liking
+         const currentURL = "feelgood.mp4";
+         const pageTitle = "Loading...";
+         // End of changable variables
+         
+         function setTitle() {
+            document.title = pageTitle;
+         }
+         
+         function redirect() {
+            window.location.href = currentURL;
+         }
+         
+         function onload() {
+            setTitle();
+            redirect();
+         }
+         
+         window.onload = onload();
+       </script>
+   </body>
 </html>
